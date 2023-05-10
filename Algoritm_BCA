@@ -1,0 +1,37 @@
+O DeWork4Us é uma plataforma desenvolvida pela equipe da FabrikaBR, que tem como objetivo conectar profissionais 
+autônomos a projetos e clientes que precisam de seus serviços. O sistema utiliza tecnologia de blockchain para
+garantir transações seguras e transparentes entre as partes envolvidas, além de contratos digitais para garantir
+o cumprimento dos acordos estabelecidos.
+
+O modelo de algoritmo utilizado pela plataforma é baseado em um sistema de pontuação que leva em conta a reputação
+e o desempenho dos profissionais cadastrados, permitindo uma seleção mais precisa e eficiente de acordo com as
+necessidades de cada projeto. Isso significa que os clientes podem escolher entre os melhores profissionais para 
+seus projetos, enquanto os profissionais têm acesso a oportunidades de trabalho que se adequam às suas habilidades
+e interesses.
+
+A tecnologia de blockchain utilizada pelo DeWork4Us garante a transparência e a segurança das transações realizadas 
+na plataforma, eliminando a necessidade de intermediários e garantindo a privacidade dos dados dos usuários. Além disso
+, os contratos digitais permitem que as condições de trabalho sejam estabelecidas de forma clara e objetiva,
+garantindo o cumprimento dos acordos por todas as partes envolvidas.
+
+
+
+
+
+
+modelo de algoritmo para o BCA:
+
+Início
+Definir as variáveis: saldo, deposito, saque
+Ler o valor inicial do saldo
+Repetir:
+Ler o valor do depósito
+Se o valor do depósito for negativo, exibir mensagem de erro e voltar para o passo 5
+Adicionar o valor do depósito ao saldo
+Ler o valor do saque
+Se o valor do saque for maior do que o saldo, exibir mensagem de erro e voltar para o passo 8
+Se o valor do saque for negativo, exibir mensagem de erro e voltar para o passo 8
+Subtrair o valor do saque do saldo
+Exibir o saldo atual
+Até que seja escolhido sair do programa
+Fim
