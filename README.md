@@ -22,4 +22,4 @@ poolAmount = valorTotal - executorAmount - curatorAmount
 
 Onde proporçãoExecutor, proporçãoCurador e valorTotal são definidos no contrato.
 
-Com essas funções e variáveis em seu contrato DeWork, você tem uma estrutura básica para criar e executar contratos de serviços profissionais descentralizados. No entanto, é importante lembrar que este é apenas um exemplo e que você deve adaptar o código para suas necessidades específicas. Além disso, certifique-se de testar completamente seu código antes de implantá-lo em um ambiente de produção.
+Com essas funções e variáveis em seu contrato DeWork, você tem uma estrutura básica para criar e executar contratos de serviços profissionais descentralizados. 
