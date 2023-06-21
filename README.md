@@ -1,25 +1,25 @@
-# DeWork
+# DeWork4Us
  This is the Blockchain dedicated to the DeWork protocol, 
 proof of work will be implemented initially due to reduced demand, 
 as soon as we reach maturity level 2, 
 tests will be carried out and the migration to proof of stake will be available. 
 
-O contrato DeWork acima tem como objetivo fornecer uma estrutura operacional para a criação e execução de contratos inteligentes. O contrato armazena informações sobre os contratos criados, como o objetivo, o valor alocado, o dono do contrato, o executor e o curador.
+ The above DeWork contract aims to provide an operational framework for the creation and execution of smart contracts. The contract stores information about the created contracts, such as the objective, allocated value, contract owner, executor, and curator.
 
-Os contratos são criados utilizando a função createContract, que recebe como parâmetro o objetivo do contrato e o valor alocado. O valor alocado é adicionado ao fundo garantidor (poolBalance) do contrato.
+Contracts are created using the createContract function, which takes the contract objective and allocated value as parameters. The allocated value is added to the contract's guarantee fund (poolBalance).
 
-Os contratos podem ser executados utilizando a função executeContract, que permite que o dono do contrato execute-o. Para que um contrato seja executado, ele deve estar totalmente financiado (ou seja, o valor total deve estar disponível na pool operacional) e deve ter sido auditado pelo curador designado.
+Contracts can be executed using the executeContract function, which allows the contract owner to execute it. For a contract to be executed, it must be fully funded (i.e., the total value must be available in the operational pool) and must have been audited by the designated curator.
 
-Para executar um contrato, o dono do contrato deve chamar a função executeContract passando o endereço do contrato como argumento. A função executeContract irá verificar se o contrato está totalmente financiado e se foi auditado pelo curador. Se o contrato estiver em conformidade, a função irá transferir o valor total do contrato da pool operacional para o executor designado e registrar a execução do contrato.
+To execute a contract, the contract owner must call the executeContract function, passing the contract address as an argument. The executeContract function will verify if the contract is fully funded and if it has been audited by the curator. If the contract is compliant, the function will transfer the total value of the contract from the operational pool to the designated executor and record the contract's execution.
 
-Se um contrato não estiver em conformidade, a função executeContract irá falhar e o contrato permanecerá em seu estado atual. O dono do contrato pode tentar executar o contrato novamente após corrigir quaisquer problemas.
+If a contract is not compliant, the executeContract function will fail, and the contract will remain in its current state. The contract owner can attempt to execute the contract again after addressing any issues.
 
-A função executeContract também é responsável por calcular e distribuir as proporções apropriadas do valor total do contrato para o executor, curador e pool operacional. A fórmula utilizada para determinar as proporções é a seguinte:
+The executeContract function is also responsible for calculating and distributing the appropriate proportions of the total contract value to the executor, curator, and operational pool. The formula used to determine the proportions is as follows:
 
-executorAmount = valorTotal * (proporçãoExecutor / 100)
-curatorAmount = valorTotal * (proporçãoCurador / 100)
-poolAmount = valorTotal - executorAmount - curatorAmount
+executorAmount = totalValue * (executorProportion / 100)
+curatorAmount = totalValue * (curatorProportion / 100)
+poolAmount = totalValue - executorAmount - curatorAmount
 
-Onde proporçãoExecutor, proporçãoCurador e valorTotal são definidos no contrato.
+Where executorProportion, curatorProportion, and totalValue are defined in the contract.
 
-Com essas funções e variáveis em seu contrato DeWork, você tem uma estrutura básica para criar e executar contratos de serviços profissionais descentralizados. 
+With these functions and variables in your DeWork contract, you have a basic framework for creating and executing decentralized professional service contracts.
